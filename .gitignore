@@ -4,3 +4,14 @@
 *.jar
 *.war
 *.ear
+
+# Idea Project files
+.settings/
+.idea/
+*.iml
+
+#log ignore
+log/
+
+#maven ignore
+target/
