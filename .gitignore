@@ -11,7 +11,7 @@
 *.iml
 
 #log ignore
-log/
+logs/
 
 #maven ignore
 target/

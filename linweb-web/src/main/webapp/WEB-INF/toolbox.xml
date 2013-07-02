@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbox>  
+    <tool>  
+        <key>calendarUtil</key>  
+        <scope>application</scope>  
+        <class>com.touchhy.web.linweb.common.utils.CalendarUtil</class>
+    </tool>  
+    <tool>
+        <key>jsonUtil</key>
+        <scope>application</scope>
+        <class>com.touchhy.web.linweb.common.utils.JsonUtil</class>
+    </tool>
+    <tool>
+        <key>securityUtil</key>
+        <scope>application</scope>
+        <class>com.touchhy.web.linweb.common.utils.SecurityUtil</class>
+    </tool>
+    <tool>
+       <key>pageTool</key> 
+       <scope>request</scope>
+       <class>com.touchhy.web.linweb.common.tool.PageResourceConfigTool</class>
+    </tool>
+</toolbox>  

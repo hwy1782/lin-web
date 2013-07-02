@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="/maven/repository/mysql/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" />
+	<context id="imagewikis" targetRuntime="MyBatis3"
+		defaultModelType="flat">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.152.128:3306/imagewikis?autoReconnect=true&amp;characterEncoding=utf8&amp;useUnicode=true" userId="test"
+			password="test" />
+		<javaModelGenerator targetPackage="com.touchhy.imagewikis.entity"
+			targetProject="imagewikis-biz" />
+		<sqlMapGenerator targetPackage="com.touchhy.imagewikis.entity"
+			targetProject="imagewikis-biz" />
+		<javaClientGenerator targetPackage="com.touchhy.imagewikis.dao"
+			targetProject="imagewikis-biz" type="XMLMAPPER">
+		</javaClientGenerator>
+		<!--
+		<table tableName="ss_user"></table>
+		<table tableName="ss_task"></table>
+		<table tableName="picture"></table>
+		-->
+		<table tableName="album"></table>
+		<table tableName="album_favorite"></table>
+		<table tableName="album_statistics"></table>
+		<table tableName="auction"></table>
+		<table tableName="picture"></table>
+		<table tableName="picture_statistics"></table>
+		<table tableName="ss_user_extend"></table>
+		
+	</context>
+</generatorConfiguration>

@@ -1,0 +1,17 @@
+#if($!message)
+	<div id="message" class="alert alert-success"><button data-dismiss="alert" class="close">×</button>${message}</div>
+#end
+<table id="contentTable" class="table table-striped table-bordered table-condensed">
+	<tbody>
+		#foreach($user in $users)
+			<tr>
+				<td><a href="${ctx}/admin/user/update/${user.id}">${user.loginName}</a></td>
+				<td>${user.name}</td>
+				<td>
+					<joda:format value="${user.registerDate}" style="LL" locale="zh"/>
+				</td>
+				<td><a href="${ctx}/admin/user/delete/${user.id}">删除</a></td>
+			</tr>
+		#end
+	</tbody>
+</table>
